@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Single viewport meta tag is sufficient -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Andrea Dimauro</title> <!-- Ensure your title is appropriately spaced and capitalized -->
+        <link rel="shortcut icon" href="logo.jpeg">
+
+        <!-- Consolidate your font links -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,100,300|Raleway:100,400,700|Oswald:200,400,700" rel="stylesheet">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" rel="stylesheet">
+
+    </head>
+  </head>
+  <body>
+    <header>
+      <nav class="navigation-bar">
+          <div class="logo-container">
+              <img class="logo" src="image/logo.jpeg" alt="Logo">
+          </div>
+          
+          <!-- Menu Icon -->
+          <div class="menu-logo-container" id="menuLogoContainer">
+              <img class="menu-logo" src="image/icons8-menu-64.png" alt="Menu" id="menuLogo">
+          </div>
+  
+          <!-- Navigation Links -->
+          <ul class="nav-links" id="navbarMenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#servizi">Servizi</a></li>
+            <li><a href="#pubblicazioni">Pubblicazioni</a></li>
+            <li><a href="#contatti">Contatti</a></li>
+          </ul>
+      </nav>
+  </header>
+  <div class="page-content" id="pageContent">
+      <!-- The rest of your page content goes here -->
+  </div>
+  <script>
+    window.addEventListener('scroll', function() {
+    var navigationBar = document.querySelector('.navigation-bar');
+    if (window.scrollY > 50) { // Adjust the 50px offset as needed
+        navigationBar.classList.add('scrolled');
+    } else {
+        navigationBar.classList.remove('scrolled');
+    }
+    });
+  </script>
+  <script>
+    document.getElementById('menuLogo').addEventListener('click', function() {
+        document.getElementById('navbarMenu').classList.toggle('active');
+        document.getElementById('pageContent').classList.toggle('blur');
+    });
+</script>
+<main>
+    <section id="home" class="home">
+        <div class="home-content">
+            <div class="home-text">
+                <h1>Andrea DiMauro</h1>
+                <p>
+                    Il metodo per raggiungere finalmente il tuo massimo potenziale tennistico?
+                    Sei nel posto giusto!
+                </p>
+                <h3>PREPARAZIONE FISICA TENNIS</h3>
+                <p>
+                    Sei un maestro o un circolo che vorrebbe creare stage, avere una consulenza per un report dati tramite TEST FISICI computerizzati?
+                </p>
+            </div>
+            
+            <div class="home-image">
+                <img src="image/ad_home.jpeg" alt="Andrea DiMauro" />
+            </div>
+        </div>
+    </section>
+    <!-- Additional sections would go here -->
+     <!--servizi--> 
+     <section class="servizi" id="servizi">
+        <h1 class="service-title">I NOSTRI SERVIZI</h1>
+        <div class="services-container">
+            <article class="service-item">
+                <h2 class="service-heading">PREPARAZIONE FISICA</h2>
+                <img class="service-icon" src="image/iconatennis.jpg" alt="Tennis Preparation Icon">
+                <p class="service-description">Preparazione Fisica specifica per il tennis e il padel.</p>
+            </article>
+            <article class="service-item">
+                <h2 class="service-heading">CONSULENZA</h2>
+                <img class="service-icon" src="image/iconaconsulenza.jpg" alt="Consulting Icon">
+                <p class="service-description">Consulenza tramite MISURAZIONE E VALUTAZIONE delle qualità fisiche del tennista attraverso una specifica batteria di test.</p>
+            </article>
+            <article class="service-item">
+                <h2 class="service-heading">PROGRAMMAZIONE</h2>
+                <img class="service-icon" src="image/iconaprogrammazione.png" alt="Programming Icon">
+                <p class="service-description">Programmi personalizzati online tramite amnesi iniziale.</p>
+            </article>
+        </div>
+    </section>
+     <!-- pubblicazioni -->
+    <section id="pubblicazioni" class="pubblicazioni">
+        <h1 class="px">LE MIE PUBBLICAZIONI</h1>
+        <hr class="section-divider">
+      
+        <div class="pu">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <div class="text-content">
+                                <h3 class="manu">Manuale del giovane tennista</h3>
+                                <p class="mant">
+                                    Un’opera di grande valore aggiornata, chiara e coincisa.
+                                    Una descrizione logica e completa, ricca di dettagli e spunti di lavoro pratico.
+                                </p>
+                                <a href="https://www.scienzemotorie.com/libri/manuale-di-preparazione-fisica-del-giovane-tennista/" class="buttonma" target="_blank">READ MORE</a>
+                            </div>
+                            <img class="slide-image gigi" src="image/manuale.jpeg" alt="Manuale del giovane tennista">
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <!-- Content for Slide 2 -->
+                            <div class="text-content">
+                                <h3 class="manu">Manuale del giovane tennista</h3>
+                                <p class="mant">
+                                    Un’opera di grande valore aggiornata, chiara e coincisa.
+                                    Una descrizione logica e completa, ricca di dettagli e spunti di lavoro pratico.
+                                </p>
+                                <a href="https://www.scienzemotorie.com/libri/manuale-di-preparazione-fisica-del-giovane-tennista/" class="buttonma">READ MORE</a>
+                            </div>
+                            <img class="slide-image gigi" src="image/.jpeg" alt="Manuale del giovane tennista">
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <!-- Content for Slide 3 -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Navigation arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        }); 
+    </script>
+      
+          <!-- Blog Section -->
+          <div class="blog-container">
+            <h2 class="patiti">Tieni d'occhio i miei blog</h2>
+            <hr class="blog-divider">
+            <p class="paco">Rimani sempre aggiornato sulle mie pubblicazioni.</p>
+            <h3 class="patiti">I miei social:</h3>
+            <!-- Social Icons -->
+            <div class="social-icons">
+                <a href="https://instagram.com/andrea___dimauro?igshid=M2RkZGJiMzhjOQ==" target="_blank">
+                    <img class="imso" src="image/instagram-logo.jpeg" alt="Instagram">
+                </a>
+                <a href="https://instagram.com/andrea___dimauro?igshid=M2RkZGJiMzhjOQ==" target="_blank">
+              <img class="imso" src="image/linkedinlogo.jpg" alt="LinkedIn"></a>
+              <a href="https://instagram.com/andrea___dimauro?igshid=M2RkZGJiMzhjOQ==" target="_blank">
+              <img class="imso" src="image/facebooklogo.jpg" alt="Facebook"></a>
+            </div>
+          </div>
+        </div>
+          <!--contact-->
+          <section id="contatti" class="body">
+            <section id="contact">
+              
+              <div class="contact-wrapper">
+
+                <h1 class="section-header">Contact</h1>
+              
+              <!-- Left contact page --> 
+                
+                <form id="contact-form" class="form-horizontal" role="form">
+                   
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+                    </div>
+                  </div>
+            
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+                    </div>
+                  </div>
+            
+                  <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+                  
+                  <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                    <div class="alt-send-button">
+                      <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                    </div>
+                  
+                  </button>
+                  
+                </form>
+                
+              <!-- Left contact page --> 
+                
+                  <div class="direct-contact-container">
+            
+                    <ul class="contact-list">
+                      <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place"><a href=" https://tennisroverbella.wansport.com/">Roverbella, Mantova</a></span></i></li>
+                      
+                      <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">3427567114</a></span></i></li>
+                      
+                      <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="dimauroandrea25@gmail.com" title="Send me an email">dimauroandrea25@gmail.com</a></span></i></li>
+                      
+                    </ul>
+            
+                    <hr>
+                    <ul class="social-media-list">
+                      <li><a href="#" target="_blank" class="contact-icon">
+                        <i class="fa fa-github" aria-hidden="true"></i></a>
+                      </li>
+                      <li><a href="#" target="_blank" class="contact-icon">
+                        <i class="fa fa-codepen" aria-hidden="true"></i></a>
+                      </li>
+                      <li><a href="#" target="_blank" class="contact-icon">
+                        <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                      </li>      
+                    </ul>
+                    <hr>
+            
+                    <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+            
+                  </div>
+                
+              </div>
+              
+            </section> 
+            </section>
+            <!-- partial -->
+            <script src="https://smtpjs.com/v3/smtp.js"> </script>
+            <script>
+                function SendEmail(){
+                  let name = document.getElementById("name").value;
+                  let email = document.getElementById("email").value;
+                  let conatact = document.getElementById("phone").value;
+                  let subject = document.getElementById("oggetto").value;
+                  let message = document.getElementById("messaggio").value;
+                  let body = "Name:" + name + "<br/> Email:" + email + "<br/> Contact Number:" + conatact + "<br/> Subject:" + subject + "<br/> Messages:" + message;
+                Email.send({
+                    SecureToken: "63800db4-d562-4e0a-b01e-a59e506925d1",
+                                    To : 'enrico.zeni05@gmail.com',
+                                    From : "enrico.zeni05@gmail.com",
+                                    Subject : "Message from contact form",
+                                    Body : body
+                 }).then(
+               message => alert(message)
+                 );
+            
+                    
+                }
+            </script>
+</main>
+         <!--footer-->
+         <section class="piede">
+            <footer class="footer">
+               <div class="container">
+                   <div class="row">
+                       <div class="footer-col">
+                           <h4>Chi sono</h4>
+                           <ul>
+                               <li><a href="chisiamo.html">About Me</a></li>
+                               <li><a href="https://form.agid.gov.it/view/45b1c2dd-0cd7-4a23-8a33-c86b6446a8fd/" target="_blank">Obiettivo di accessibilità</a></li>
+                               <li><a href="https://form.agid.gov.it/view/45b1c2dd-0cd7-4a23-8a33-c86b6446a8fd/" target="_blank">Informativa privacy</a></li>
+                           </ul>
+                       </div>
+                       <div class="footer-col">
+                           <h4>Aiuto</h4>
+                           <ul>
+                               <li><a href="https://www.privacycert.cloud/" target="_blank">Privacy</a></li>
+                           </ul>
+                       </div>
+                       <div class="footer-col">
+                           <h4>Contatti</h4>
+                           <ul>
+                               <i class="fa-solid fa-map-location-dot"></i>
+                               <li><a href="#">Via Nicolajeska,<br> 46048 Roverbella MN</a></li>
+                               <li><a href="dimauroandrea25@gmail.com">dimauroandrea25@gmail.com</a></li>
+                               <li><a href="3427567114">3427567114</a></li>
+                           </ul>
+                       </div>
+                       <div class="footer-col">
+                           <h4>seguimi su</h4>
+                           <div class="social-links">
+                               <a href="https://www.facebook.com/tennisclub.roverbella/" target="_blank"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a>
+                               <a href="https://www.instagram.com/andrea___dimauro/" target="_blank"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+       </footer>
+     </section>
+   
+  </body>  
+</html>
