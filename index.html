@@ -67,7 +67,7 @@
     <section id="home" class="home">
         <div class="home-content">
             <div class="home-text">
-                <h1>Andrea DiMauro</h1>
+                <h1>Andrea Dimauro</h1>
                 <p>
                     Il metodo per raggiungere finalmente il tuo massimo potenziale tennistico?
                     Sei nel posto giusto!
@@ -131,23 +131,13 @@
                     <div class="swiper-slide">
                         <div class="slide-content">
                             <!-- Content for Slide 2 -->
+                            <img class="img-content" src="image/stayupdated.png">
                             <div class="text-content">
-                                <h3 class="manu">Manuale del giovane tennista</h3>
-                                <p class="mant">
-                                    Un’opera di grande valore aggiornata, chiara e coincisa.
-                                    Una descrizione logica e completa, ricca di dettagli e spunti di lavoro pratico.
-                                </p>
-                                <a href="https://www.scienzemotorie.com/libri/manuale-di-preparazione-fisica-del-giovane-tennista/" class="buttonma">READ MORE</a>
+                                
                             </div>
-                            <img class="slide-image gigi" src="image/.jpeg" alt="Manuale del giovane tennista">
                         </div>
                     </div>
                     <!-- Slide 3 -->
-                    <div class="swiper-slide">
-                        <div class="slide-content">
-                            <!-- Content for Slide 3 -->
-                        </div>
-                    </div>
                 </div>
                 <!-- Navigation arrows -->
                 <div class="swiper-button-next"></div>
@@ -185,9 +175,9 @@
                 <a href="https://instagram.com/andrea___dimauro?igshid=M2RkZGJiMzhjOQ==" target="_blank">
                     <img class="imso" src="image/instagram-logo.jpeg" alt="Instagram">
                 </a>
-                <a href="https://instagram.com/andrea___dimauro?igshid=M2RkZGJiMzhjOQ==" target="_blank">
-              <img class="imso" src="image/linkedinlogo.jpg" alt="LinkedIn"></a>
-              <a href="https://instagram.com/andrea___dimauro?igshid=M2RkZGJiMzhjOQ==" target="_blank">
+                <!--<a href="https://instagram.com/andrea___dimauro?igshid=M2RkZGJiMzhjOQ==" target="_blank">
+              <img class="imso" src="image/linkedinlogo.jpg" alt="LinkedIn"></a>-->
+              <a href="https://www.facebook.com/Dimauroandre" target="_blank">
               <img class="imso" src="image/facebooklogo.jpg" alt="Facebook"></a>
             </div>
           </div>
@@ -199,34 +189,38 @@
               <div class="contact-wrapper">
 
                 <h1 class="section-header">Contact</h1>
-              
-              <!-- Left contact page --> 
-                
-                <form id="contact-form" class="form-horizontal" role="form">
-                   
-                  <div class="form-group">
-                    <div class="col-sm-12">
-                      <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
-                    </div>
+              <!--form-->
+              <!-- Left contact page -->                
+              <form id="contact-form" class="form-horizontal" role="form">
+                         
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <input type="text" class="form-control" placeholder="Nome e cognome" id="name" >
                   </div>
-            
-                  <div class="form-group">
-                    <div class="col-sm-12">
-                      <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
-                    </div>
+                </div>
+          
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <input type="text" class="form-control" placeholder="Email" id="email">
                   </div>
-            
-                  <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
-                  
-                  <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-                    <div class="alt-send-button">
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <input type="text" class="form-control"  placeholder="numero telefonico" id="phone">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <input type="text" class="form-control" placeholder="oggetto "id="oggetto" >
+                  </div>
+                </div>
+                <textarea class="form-control" name="" id="messaggio" cols="31" rows="4" placeholder="Enter your message"> </textarea>     
+                  <button class="btn btn-primary send-button" id="submit" button type="button" onclick="SendEmail()">                  
+                    <div class = "alt-send-button">
                       <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-                    </div>
-                  
-                  </button>
-                  
-                </form>
-                
+                    </div>                  
+                  </button>               
+                </form>              
               <!-- Left contact page --> 
                 
                   <div class="direct-contact-container">
@@ -262,8 +256,30 @@
               
             </section> 
             </section>
-            <!-- partial -->
             <script src="https://smtpjs.com/v3/smtp.js"> </script>
+                  <script>
+                      function SendEmail(){
+                        let name = document.getElementById("name").value;
+                        let email = document.getElementById("email").value;
+                        let conatact = document.getElementById("phone").value;
+                        let subject = document.getElementById("oggetto").value;
+                        let message = document.getElementById("messaggio").value;
+                        let body = "Name:" + name + "<br/> Email:" + email + "<br/> Contact Number:" + conatact + "<br/> Subject:" + subject + "<br/> Messages:" + message;
+                      Email.send({
+                          SecureToken: "63800db4-d562-4e0a-b01e-a59e506925d1",
+                                          To : 'enrico.zeni05@gmail.com',
+                                          From : "enrico.zeni05@gmail.com",
+                                          Subject : "Message from contact form",
+                                          Body : body
+                       }).then(
+                     message => alert(message)
+                       );
+                  
+                          
+                      }
+                  </script>
+            <!-- partial -->
+            <!--<script src="https://smtpjs.com/v3/smtp.js"> </script>
             <script>
                 function SendEmail(){
                   let name = document.getElementById("name").value;
@@ -284,7 +300,7 @@
             
                     
                 }
-            </script>
+            </script>-->
 </main>
          <!--footer-->
          <section class="piede">
@@ -309,7 +325,6 @@
                            <h4>Contatti</h4>
                            <ul>
                                <i class="fa-solid fa-map-location-dot"></i>
-                               <li><a href="#">Via Nicolajeska,<br> 46048 Roverbella MN</a></li>
                                <li><a href="dimauroandrea25@gmail.com">dimauroandrea25@gmail.com</a></li>
                                <li><a href="3427567114">3427567114</a></li>
                            </ul>
@@ -317,7 +332,7 @@
                        <div class="footer-col">
                            <h4>seguimi su</h4>
                            <div class="social-links">
-                               <a href="https://www.facebook.com/tennisclub.roverbella/" target="_blank"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a>
+                               <a href="https://www.facebook.com/Dimauroandre" target="_blank"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a>
                                <a href="https://www.instagram.com/andrea___dimauro/" target="_blank"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a>
                            </div>
                        </div>
