@@ -417,11 +417,22 @@ main {
     font-weight: bold;
     margin-bottom: 10px;
 }
-
+.mango{
+  font-weight: bold;
+  margin-bottom: 12px;
+  position: relative;
+  text-align: center;
+}
 .mant {
     font-size: 16px;
 }
-
+#ceti{
+  padding-left: 10%;
+}
+#bob{
+  margin-top: 2%;margin-left: 24%;
+  height:80%;width:80%;
+}
 .buttonma {
     display: inline-block;
     background-color: red;
@@ -464,6 +475,64 @@ main {
     left: 80px;
 }
 
+/* Styles for the second swiper slide */
+@media only screen and (max-width: 425px) {
+  .custom-slide {
+      display: flex;
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+  }
+
+  .custom-slide .slide-content {
+      display: flex;
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+  }
+
+  .custom-slide .text-content {
+      max-width: 100%; /* Adjust max-width for text content */
+      text-align: center; /* Center align text */
+  }
+
+  .custom-slide .manu {
+      font-weight: bold;
+      margin-bottom: 10px;
+  }
+
+  .custom-slide .mango {
+      font-weight: bold;
+      margin-bottom: 12px;
+      position: relative;
+  }
+
+  .custom-slide .mant {
+      font-size: 16px;
+  }
+
+  .custom-slide #ceti {
+      padding-left: 0; /* Reset padding for h3 */
+  }
+
+  .custom-slide #bob {
+      margin-top: 10px; /* Adjust margin-top for the image */
+      max-width: 70%; /* Adjust max-width for the image */
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  /* Adjust spacing for elements in the second slide */
+  .custom-slide .mango,
+  .custom-slide .manu,
+  .custom-slide #bob {
+      margin-top: 40px; /* Add space between elements */
+  }
+}
+
 /* Responsive Design */
 @media (max-width: 780px) {
     .swiper-slide {
@@ -485,18 +554,42 @@ main {
     
   }
   .manu, .mant {
-      font-size: 14px;
+      font-size: 24px;
   }
-
+  
   .slide-image {
       max-width: 65%;
   }}
+
 .img-content{
   margin-left: auto;margin-right: auto;
 }
+.slide-imag-gig{
+  width:20%;
+  height:20%;
+  position: flex;
+}
+.swiper-slide {
+  font-size: 14px;
+  text-align: center;
+}
 
+#ceti {
+  padding-left: 200px;
+  padding-right: 20px;
+  font-size: 1rem;
 
-    
+}
+
+#bob {
+  margin-left: 40px;
+  margin: 2% auto;
+  height: auto;
+  width: 80%;
+  font-size: medium;
+}     
+.mant {
+  font-size: 14px; } 
   
   .patiti, .paco {
     text-align: center;
@@ -1162,5 +1255,5 @@ ol{
     
     .row {
       flex-direction: column; /* Stack flex children vertically */
-    }
+    } 
   }
