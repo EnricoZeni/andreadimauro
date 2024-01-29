@@ -237,12 +237,14 @@ main {
       object-fit: cover; /* Ensure the image covers the area properly */
       border-radius: 0%;
       padding-right: 80px;
+      text-align: center;
 }
      
 }
 @media (max-width: 780px) {
   .home-content {
       flex-direction: column;
+      text-align: center;
   }
 
   /* Ensure image comes before text on small devices */
@@ -250,14 +252,16 @@ main {
       order: -1;
       text-align: center;
       margin-bottom: 20px;
+      text-align: center;
   }
 
   .home-text {
       text-align: center;
   }
 
-  .home-text h1, .home-text p {
+  .home-text h1,h3, .home-text p {
       font-size: 18px; /* Adjust font size as needed */
+      text-align: center;
   }
 }
 
@@ -265,11 +269,31 @@ main {
 @media (max-width: 390px) {
   .home-text h1 {
       font-size: 24px; /* Slightly larger font size for h1 */
+      text-align: center;
   }
 
   .home-text p {
       font-size: 16px; /* Slightly smaller font size for paragraph */
+      text-align: center;
   }
+}
+
+/*salto*/
+
+.salto{
+  background-color: #849bb6;
+  padding-top:10%;
+  padding-bottom: 10%;
+  font-family: 'myFont';
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+}
+.testfisici{
+  padding-bottom: 20px;
+}
+div.jumphoto{
+padding-top: 50px;
 }
 /*servizi*/
 .servizi {
