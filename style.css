@@ -279,7 +279,7 @@ main {
 }
 
 /*salto*/
-
+/*
 .salto{
   background-color: #849bb6;
   padding-top:10%;
@@ -294,6 +294,33 @@ main {
 }
 div.jumphoto{
 padding-top: 50px;
+}*/
+.salto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #849bb6;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: 'myFont';
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.testfisici {
+  padding-bottom: 10px;
+}
+
+.jumphoto {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.jumphoto img {
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  height: auto; /* Maintain aspect ratio */
 }
 /*servizi*/
 .servizi {
@@ -335,7 +362,7 @@ padding-top: 50px;
 }
 
 .service-icon {
-    width: 80px; /* Fixed size for icons */
+    width: 80px; 
     height: auto;
     margin-bottom: 20px;
 }
@@ -353,29 +380,50 @@ padding-top: 50px;
     }
 
     .service-item {
-        width: 80%; /* Adjust width on smaller screens */
+        width: 80%; 
     }
 }
 
 @media (max-width: 390px) {
     .service-title {
-        font-size: 4rem; /* Adjust title size on very small screens */
+        font-size: 4rem; 
     }
 
     .service-heading {
-        font-size: 1.5rem; /* Adjust heading size on very small screens */
+        font-size: 1.5rem; 
+    }
+    .salto {
+      flex-direction: column;
+      text-align: left;
+      padding-top: 10%;
+      padding-bottom: 10%;
+      font-size: 10px; 
+    }
+  
+    .testfisici {
+      font-size: 20px; 
+      padding: 10px; 
+    }
+  
+    .testo {
+      font-size: 12px; 
+      padding: 10px;
+    }
+  
+    .jumphoto {
+      padding-top: 20px; 
     }
 }
 /*pubblicazioni*/
 .pubblicazioni {
     font-family: 'myFont', sans-serif;
-    background: #fff; /* Set to white or any other color as needed */
+    background: #fff; 
     color: #000;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 10px; /* Rounded corners for the entire section */
+    border-radius: 10px; 
   }
   
   .px {
@@ -383,7 +431,7 @@ padding-top: 50px;
     font-size: 2rem;
     font-weight: bold;
     margin: 20px 0;
-    border-radius: 10px; /* Rounded corners for the title */
+    border-radius: 10px;
   }
   
   .section-divider {
@@ -395,17 +443,17 @@ padding-top: 50px;
   }
 
   .pu {
-    max-width: 90%; /* Making the slider smaller than its container */
-    margin: 0 auto; /* Centering the slider */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
-    border-radius: 15px; /* Rounded corners */
-    overflow: hidden; /* Ensures content respects border radius */
+    max-width: 90%; 
+    margin: 0 auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 15px; 
+    overflow: hidden; 
 }
 
 /* Swiper Container */
 .swiper {
-    border-radius: 15px; /* Match with the container's border-radius */
-    overflow: hidden; /* Ensures swiper content respects border radius */
+    border-radius: 15px; 
+    overflow: hidden; 
 }
 
 /* Swiper Container */
@@ -980,6 +1028,11 @@ padding-top: 50px;
   
     /* Adjust font sizes and other properties as needed */
   }
+@media screen and (max-width: 390px){
+  .contact-text{
+    font-size: 11px;
+  }
+}
 /*-------------------------------------------x----------------------------------------------x------------------------*/
 
 /*footer*/
