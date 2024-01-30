@@ -285,12 +285,12 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  background-color: #849bb6;
+  background-color: #bdcad9;
   padding-top: 5%;
   padding-bottom: 5%;
   font-family: 'myFont';
   text-align: center;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: bold;
 }
 @media (max-width: 780px) {
@@ -303,16 +303,22 @@ main {
     text-align: center;
   }
 }
-
+.mango{
+  background-color: white; padding: 5%;padding-left: 10%;padding-right: 10%; border-radius: 20px;
+}
 .testfisici {
   padding-bottom: 10px;
+  font-weight: bold;
+  font-family: 'boldone';
 }
 
 .jumphoto {
   text-align: center;
   padding-top: 20px;
 }
-
+.jumphoto .dino{
+  height:70%; width: 70%;
+}
 .jumphoto img {
   max-width: 100%; /* Ensure the image doesn't exceed its container */
   height: auto; /* Maintain aspect ratio */
