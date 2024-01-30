@@ -279,22 +279,7 @@ main {
 }
 
 /*salto*/
-/*
-.salto{
-  background-color: #849bb6;
-  padding-top:10%;
-  padding-bottom: 10%;
-  font-family: 'myFont';
-  text-align: center;
-  font-size: 26px;
-  font-weight: bold;
-}
-.testfisici{
-  padding-bottom: 20px;
-}
-div.jumphoto{
-padding-top: 50px;
-}*/
+
 .salto {
   display: flex;
   flex-direction: row;
@@ -307,6 +292,16 @@ padding-top: 50px;
   text-align: center;
   font-size: 15px;
   font-weight: bold;
+}
+@media (max-width: 780px) {
+  .salto{
+    text-align: center;
+  }
+}
+@media (max-width: 390px) {
+  .salto{
+    text-align: center;
+  }
 }
 
 .testfisici {
