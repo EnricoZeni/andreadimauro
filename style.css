@@ -304,14 +304,23 @@ main {
   }
 }
 .mango{
-  background-color: white; padding: 5%;padding-left: 10%;padding-right: 10%; border-radius: 20px;
+  background-color: white; padding: 5%;padding-left: 10%;padding-right: 10%; border-radius: 20px;max-width: 90%;
 }
 .testfisici {
   padding-bottom: 10px;
   font-weight: bold;
   font-family: 'boldone';
 }
-
+@media (max-width: 780px) {
+  .mango{
+    padding:2%;border-left: 2%;border-right: 2%;
+  }
+}
+@media (max-width: 390px) {
+  .mango{
+    padding:2%;border-left: 2%;border-right: 2%;
+  }
+}
 .jumphoto {
   text-align: center;
   padding-top: 20px;
@@ -320,7 +329,7 @@ main {
   height:70%; width: 70%;
 }
 .jumphoto img {
-  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  max-width: 85%; /* Ensure the image doesn't exceed its container */
   height: auto; /* Maintain aspect ratio */
 }
 /*servizi*/
