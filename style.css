@@ -244,7 +244,7 @@ main {
 @media (max-width: 780px) {
   .home-content {
       flex-direction: column;
-      text-align: center;
+      text-align: left;
   }
 
   /* Ensure image comes before text on small devices */
@@ -256,12 +256,12 @@ main {
   }
 
   .home-text {
-      text-align: center;
+      text-align: left;
   }
 
   .home-text h1,h3, .home-text p {
       font-size: 18px; /* Adjust font size as needed */
-      text-align: center;
+      text-align: left
   }
 }
 
@@ -269,12 +269,12 @@ main {
 @media (max-width: 390px) {
   .home-text h1 {
       font-size: 24px; /* Slightly larger font size for h1 */
-      text-align: center;
+      text-align: left;
   }
 
   .home-text p {
       font-size: 16px; /* Slightly smaller font size for paragraph */
-      text-align: center;
+      text-align: left;
   }
 }
 
