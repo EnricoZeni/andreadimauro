@@ -176,108 +176,137 @@ body {
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #FFFFFF; /* Setting the background to white */
+  background-color: #FFFFFF; 
 }
 main {
-  padding-top: 100px; /* Adjust as needed for distance from the navbar */
+  padding-top: 100px; 
 }
 .home {
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 80px 20px;
-  background-color: #FFFFFF; /* Background color set to white */
-  margin-top: 50px; /* Additional margin to distance from navbar */
+  background-color: #FFFFFF; 
+  margin-top: 50px; 
 }
 
 .home-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 1200px; /* Adjust as needed */
+  max-width: 1200px; 
   width: 100%;
 }
 
 .home-text {
-  flex: 1; /* Flex property to take the needed space */
-  text-align: start; /* Center align text for symmetry */
-  box-sizing: border-box; /* Include padding in width calculation */
-  max-width: 800px; /* Limit the width for better readability */
-  margin: 0 auto; /* Center the container */
-  padding: 20px; /* Some padding around the text */
-
+  flex: 1; 
+  text-align: start; 
+  box-sizing: border-box; 
+  max-width: 800px; 
+  margin: 0 auto;
+  padding: 20px; 
 }
 
 .home-text h1, .home-text h3 {
-  font-family: 'boldone', sans-serif; /* Use the bold font */
-  font-weight: normal; /* Set normal weight since the font is already bold */
+  font-family: 'boldone', sans-serif; 
+  font-weight: normal; 
   text-align: start;
-  margin: 0 auto; /* Center the container */
-  padding: 20px; /* Add padding for spacing */
+  margin: 0 auto; 
+  padding: 20px; 
   color: #000;
 }
+
 .home-text p {
-  font-size: 2.6rem; /* Slightly larger font size for readability */
-  line-height: 1.5; /* Spacing between lines */
-}
+  font-size: 2.6rem; 
+  line-height: 1.5; }
 
 .home-image {
-  flex-basis: 50%; /* Allocate equal space for text and image */
-  text-align: right; /* Align the image to the right */
+  flex-basis: 50%; 
+  text-align: right; 
 }
 
-.home-image img {
-  max-height: 400px; /* Set a maximum height for the image */
-  object-fit: cover; /* Ensure the image covers the area properly */
-  border-radius: 0%;
+.dino {
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
+  padding: 20px; 
 }
+
+.dinosauro {
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
+  padding: 20px; 
+  max-height: none; 
+}
+
 @media(min-width: 980px){
-  .home-image img {
-      max-height: 400px; /* Set a maximum height for the image */
-      object-fit: cover; /* Ensure the image covers the area properly */
-      border-radius: 0%;
-      padding-right: 80px;
-      text-align: center;
+  .home-image , .dino{
+    max-height: 400px; 
+    object-fit: cover; 
+    border-radius: 0%;
+    padding-right: 80px;
+  }
 }
-     
-}
+
 @media (max-width: 780px) {
   .home-content {
-      flex-direction: column;
-      text-align: left;
+    flex-direction: column;
+    text-align: left;
   }
 
-  /* Ensure image comes before text on small devices */
   .home-image {
-      order: -1;
-      text-align: center;
-      margin-bottom: 20px;
-      text-align: center;
+    order: -1;
+    text-align: center;
+    margin-bottom: 20px;
+    text-align: center;
   }
 
   .home-text {
-      text-align: left;
+    text-align: left;
   }
 
   .home-text h1,h3, .home-text p {
-      font-size: 18px; /* Adjust font size as needed */
-      text-align: left
+    font-size: 18px; 
+    text-align: left
   }
 }
 
-/* Adjustments for even smaller devices, if necessary */
 @media (max-width: 390px) {
   .home-text h1 {
-      font-size: 24px; /* Slightly larger font size for h1 */
-      text-align: left;
+    font-size: 24px; 
+    text-align: left;
   }
 
   .home-text p {
-      font-size: 16px; /* Slightly smaller font size for paragraph */
-      text-align: left;
+    font-size: 16px; 
+    text-align: left;
   }
 }
 
+
+
+/*chisono*/
+
+.section-dividero {
+  width: 40%;
+  border: none;
+  height: 1px;
+  background-color: #5c44c5;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+.re{
+  font-weight: bold;
+  padding-bottom: 10px;
+  font-family: 'boldone';
+}
+.dinosauro{
+width: 110%;
+height: 200%;
+}
 /*salto*/
 
 .salto {
@@ -1034,6 +1063,9 @@ main {
       height: 50px; /* Adjust size for icons */
       width: 50px; /* Adjust size for icons */
       line-height: 50px; /* Adjust line height for icons */
+    }
+    .contact-text{
+      font-size: 11px;
     }
   
     /* Adjust font sizes and other properties as needed */
